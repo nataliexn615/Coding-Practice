@@ -14,14 +14,10 @@ def isUnique(strInput):
     
     #loop array
     for char in strInput:
-        
         val=ord(char) #give a value to the char
-        
         if char_set[val]: #if found the char_set[a] true = appeared
             return False
-        
-        char_set[val]=True #set to just appeared
-        
+        char_set[val]=True #set to just appeared   
     return True
 
 
